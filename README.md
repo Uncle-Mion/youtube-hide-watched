@@ -1,5 +1,5 @@
 # youtube-hide-watched
-
+this will hide already watched videos inside the right side recommened videos!!! only problem is it will still autoplay to a already watched video so dissable auto play!
 A simple userscript for toggling watched videos in the YouTube subscriptions list.
 
 The script is published on GreasyFork at: https://greasyfork.org/en/scripts/13040-youtube-hide-watched-videos
