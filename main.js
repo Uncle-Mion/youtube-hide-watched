@@ -164,7 +164,10 @@ html[dark] .YT-HWV-BUTTON {
                 // Channel "Videos" section needs special handling
                 row = item.closest('.ytd-grid-renderer');
             } else {
-                row = item.closest('ytd-video-renderer');
+                //row = item.closest('ytd-video-renderer'); because who watches vidoes in trending OMEGALUL
+                //now to hide all watched in next up recommended
+                row = item.closest('#dismissable.ytd-compact-video-renderer');		
+                row = $(row).add($(item.closest('.ytd-watch-next-secondary-results-renderer')).children('.dismissable'));
             }
 
             // If we're in grid view, we will hide the "grid" item,
